@@ -1,0 +1,229 @@
+{
+  "app": {
+    "name": "Mafiazo",
+    "tagline": "Pass the phone. Trust no one."
+  },
+  "menu": {
+    "newGame": "New Game",
+    "resumeGame": "Resume game?",
+    "resume": "Resume",
+    "discard": "Discard",
+    "roster": "Roster",
+    "history": "History",
+    "settings": "Settings",
+    "modeStandard": "Standard Mafia",
+    "modeLebnene": "Lebnené",
+    "modeStandardDesc": "Classic worldwide ruleset with nightly Mafia kill.",
+    "modeLebneneDesc": "Lebanese variant. No nightly kill — Mafia work in the day."
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "skip": "Skip",
+    "done": "Done",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "yes": "Yes",
+    "no": "No",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "add": "Add"
+  },
+  "setup": {
+    "title": "Game Setup",
+    "playMode": "Play Mode",
+    "playModeModerator": "Moderator",
+    "playModeNoModerator": "No Moderator",
+    "players": "Players",
+    "addPlayer": "Add player",
+    "addAdHoc": "New name…",
+    "minPlayers": "Need at least 5 players",
+    "balance": "Role split",
+    "balanceAuto": "Auto-balance",
+    "balanceManual": "Manual",
+    "options": "Options",
+    "discussionTimer": "Discussion timer",
+    "nightPace": "Night pace",
+    "paceSlow": "Slow",
+    "paceMedium": "Medium",
+    "paceFast": "Fast",
+    "tieBreak": "Tie handling",
+    "tieRevote": "Revote tied players",
+    "tieSkip": "Skip elimination",
+    "investigations": "Investigations / night",
+    "investigationsLocked": "Locked at 1 below 15 players",
+    "godfatherInnocent": "Godfather appears innocent to Detective",
+    "soundEffects": "Sound effects",
+    "music": "Background music",
+    "testAudio": "Test audio",
+    "begin": "Begin Game"
+  },
+  "reveal": {
+    "title": "Role Reveal",
+    "passTo": "Pass to {{name}}",
+    "holdToReveal": "Press and hold to reveal your role",
+    "release": "Release to hide",
+    "youAre": "You are…",
+    "investigationsBegin": "Your investigations begin Night 1.",
+    "everyoneSeen": "Everyone has seen their role"
+  },
+  "roles": {
+    "godfather": "Godfather",
+    "mafia": "Mafia",
+    "sheriff": "Sheriff",
+    "police": "Police",
+    "detective": "Detective",
+    "civilian": "Civilian"
+  },
+  "roleDesc": {
+    "godfather": "You lead the Mafia. You appear innocent to investigators.",
+    "mafia": "Work with your Mafia. You know who they are.",
+    "sheriff": "Each night, secretly check one player's faction.",
+    "police": "Find the Mafia by listening, voting, and reasoning.",
+    "detective": "Each night, secretly check one player's faction.",
+    "civilian": "Find the Mafia by listening, voting, and reasoning."
+  },
+  "day": {
+    "title": "Day {{round}}",
+    "discussion": "Discussion",
+    "addTime": "+30s",
+    "callVote": "Call vote"
+  },
+  "vote": {
+    "title": "Vote",
+    "instructions": "Volunteer first, then clockwise. Tap the most-voted player.",
+    "skip": "No elimination",
+    "tie": "Tie",
+    "revote": "Revote tied players",
+    "tieSkip": "Skip — no elimination",
+    "tieAmong": "Tie among {{names}}"
+  },
+  "deathSpeech": {
+    "title": "Death Speech",
+    "instructions": "{{name}} has 30 seconds.",
+    "secondsLeft": "{{n}}s",
+    "end": "Time's up"
+  },
+  "death": {
+    "wasA": "{{name}} was a {{role}}",
+    "noElimination": "No one was eliminated"
+  },
+  "night": {
+    "title": "Night {{round}}",
+    "everyoneClose": "Everyone, close your eyes.",
+    "wakeUp": "Everyone, open your eyes.",
+    "passInstructions": "Pass the phone clockwise. Each player taps once.",
+    "tapToContinue": "Tap to continue",
+    "sleep": "Sleep",
+    "yourInvestigation": "Your investigation",
+    "tapTarget": "Tap a player to investigate",
+    "result": "Result",
+    "resultMafia": "Mafia",
+    "resultTown": "Town",
+    "passOn": "Pass to next player",
+    "mafiaPick": "Mafia, choose tonight's target.",
+    "godfatherTap": "Godfather, tap your target."
+  },
+  "end": {
+    "title": "Game Over",
+    "townWins": "Town wins!",
+    "mafiaWins": "Mafia wins!",
+    "reasonGodfather": "The Godfather was eliminated.",
+    "reasonAllMafia": "All Mafia were eliminated.",
+    "reasonParity": "Mafia reached parity with Town.",
+    "mvps": "MVPs",
+    "playAgain": "Play again",
+    "home": "Home"
+  },
+  "mvp": {
+    "best_sheriff": "Best Sheriff",
+    "best_mafia": "Best Mafia",
+    "best_civilian": "Best Civilian",
+    "best_bluffer": "Best Bluffer"
+  },
+  "roster": {
+    "title": "Roster",
+    "empty": "No players saved yet.",
+    "addNew": "Add new player",
+    "name": "Name",
+    "photo": "Photo",
+    "removePhoto": "Remove photo",
+    "stats": "Stats",
+    "gamesPlayed": "Games played",
+    "winRate": "Win rate",
+    "rolesPlayed": "Roles played",
+    "deleteConfirm": "Remove {{name}} from roster?"
+  },
+  "history": {
+    "title": "History",
+    "empty": "No games yet.",
+    "winner": "Winner: {{winner}}"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageEn": "English",
+    "languageAr": "العربية",
+    "languageFr": "Français",
+    "sound": "Sound effects",
+    "music": "Background music",
+    "about": "About",
+    "version": "Version {{v}}",
+    "offline": "Mafiazo is fully offline. No accounts. No tracking.",
+    "languageChangeNote": "Language changes apply immediately."
+  },
+  "narration": {
+    "common": {
+      "role_reveal_intro": "Pass the phone clockwise. Each player will press and hold to see their role.",
+      "night_0_intro": "Welcome. Everyone, close your eyes.",
+      "night_0_mafia_open": "Mafia, open your eyes. Look around. The Godfather is one of you.",
+      "night_0_mafia_close": "Mafia, close your eyes.",
+      "night_0_sheriff_open": "Detective, open your eyes.",
+      "night_0_sheriff_close": "Detective, close your eyes.",
+      "night_0_outro": "Everyone, open your eyes. Day one begins.",
+      "day_intro": "Day {{round}}. Discuss.",
+      "day_timer_warning": "Thirty seconds remaining.",
+      "vote_intro": "Time to vote. Volunteer first, then clockwise.",
+      "death_speech_intro": "{{name}}, you have thirty seconds for your final words.",
+      "death_speech_end": "Time's up.",
+      "role_reveal_on_death": "{{name}} was a {{role}}.",
+      "night_intro": "Everyone, close your eyes. Night falls.",
+      "night_mafia_open": "Mafia, open your eyes.",
+      "night_mafia_kill_prompt": "Mafia, choose tonight's target.",
+      "night_mafia_close": "Mafia, close your eyes.",
+      "night_sheriff_open": "Sheriff, open your eyes.",
+      "night_sheriff_pass_phone": "Pass the phone clockwise, starting from player one. Each player tap once.",
+      "night_sheriff_close": "Sheriff, close your eyes.",
+      "night_outro": "Everyone, open your eyes.",
+      "game_over_town": "Town wins.",
+      "game_over_mafia": "Mafia wins."
+    },
+    "lebnene": {
+      "moderator": {
+        "night_mafia_open": "Mafia, open your eyes silently. Point at tomorrow's target.",
+        "night_sheriff_open": "Sheriff, open your eyes. Point at someone — I will nod yes or no."
+      },
+      "no_moderator": {
+        "night_mafia_open": "Mafia, open your eyes silently. Point at tomorrow's target. No words.",
+        "night_sheriff_pass_phone": "Pass the phone clockwise from player one. Each player tap once. Sheriff, you will know what to do."
+      }
+    },
+    "standard": {
+      "moderator": {
+        "night_mafia_kill_prompt": "Mafia, agree on a target and point. The moderator will mark them."
+      },
+      "no_moderator": {
+        "night_mafia_kill_prompt": "Godfather, when the phone reaches you, tap your target."
+      }
+    }
+  },
+  "resume": {
+    "title": "Resume game?",
+    "body": "We saved your game in progress. Resume where you left off?",
+    "discardConfirm": "Discard saved game?"
+  }
+}
