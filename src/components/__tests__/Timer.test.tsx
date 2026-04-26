@@ -46,6 +46,8 @@ describe('Timer', () => {
     render(<Timer ref={ref} durationSec={3} onElapsed={onElapsed} />);
     act(() => {
       ref.current?.pause();
+    });
+    act(() => {
       jest.advanceTimersByTime(5000);
     });
     expect(onElapsed).not.toHaveBeenCalled();
