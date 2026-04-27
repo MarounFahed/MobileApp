@@ -1,0 +1,211 @@
+{
+  "app": {
+    "name": "Mafiazo",
+    "tagline": "Passe le téléphone. Ne fais confiance à personne."
+  },
+  "menu": {
+    "newGame": "Nouvelle partie",
+    "resumeGame": "Reprendre la partie ?",
+    "resume": "Reprendre",
+    "discard": "Abandonner",
+    "roster": "Joueurs",
+    "history": "Historique",
+    "settings": "Réglages",
+    "modeStandard": "Mafia classique",
+    "modeLebnene": "Lebnené",
+    "modeStandardDesc": "Règles classiques avec élimination nocturne.",
+    "modeLebneneDesc": "Variante libanaise. Pas d'élimination nocturne — la mafia agit le jour."
+  },
+  "common": {
+    "next": "Suivant",
+    "back": "Retour",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "skip": "Passer",
+    "done": "Fait",
+    "start": "Démarrer",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "yes": "Oui",
+    "no": "Non",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "save": "Enregistrer",
+    "add": "Ajouter"
+  },
+  "setup": {
+    "title": "Configuration",
+    "playMode": "Mode de jeu",
+    "playModeModerator": "Modérateur",
+    "playModeNoModerator": "Sans modérateur",
+    "players": "Joueurs",
+    "addPlayer": "Ajouter un joueur",
+    "addAdHoc": "Nouveau nom…",
+    "minPlayers": "Au moins 5 joueurs requis",
+    "balance": "Répartition des rôles",
+    "balanceAuto": "Auto",
+    "balanceManual": "Manuel",
+    "options": "Options",
+    "discussionTimer": "Minuteur de discussion",
+    "nightPace": "Rythme de nuit",
+    "paceSlow": "Lent",
+    "paceMedium": "Moyen",
+    "paceFast": "Rapide",
+    "tieBreak": "Égalité",
+    "tieRevote": "Revote des ex æquo",
+    "tieSkip": "Aucune élimination",
+    "investigations": "Enquêtes par nuit",
+    "investigationsLocked": "Bloqué à 1 sous 15 joueurs",
+    "godfatherInnocent": "Le Parrain paraît innocent au Détective",
+    "soundEffects": "Effets sonores",
+    "music": "Musique",
+    "testAudio": "Tester l'audio",
+    "begin": "Lancer la partie"
+  },
+  "reveal": {
+    "title": "Révélation",
+    "passTo": "Passe à {{name}}",
+    "holdToReveal": "Maintiens pour voir ton rôle",
+    "release": "Relâche pour cacher",
+    "youAre": "Tu es…",
+    "investigationsBegin": "Tes enquêtes commencent à la Nuit 1.",
+    "everyoneSeen": "Tout le monde a vu son rôle"
+  },
+  "roles": {
+    "godfather": "Parrain",
+    "mafia": "Mafia",
+    "sheriff": "Shérif",
+    "police": "Police",
+    "detective": "Détective",
+    "civilian": "Civil"
+  },
+  "roleDesc": {
+    "godfather": "Tu diriges la Mafia. Tu parais innocent aux enquêteurs.",
+    "mafia": "Travaille avec ta Mafia. Tu sais qui ils sont.",
+    "sheriff": "Chaque nuit, identifie secrètement le camp d'un joueur.",
+    "police": "Trouve la Mafia par l'écoute, le vote et le raisonnement.",
+    "detective": "Chaque nuit, identifie secrètement le camp d'un joueur.",
+    "civilian": "Trouve la Mafia par l'écoute, le vote et le raisonnement."
+  },
+  "day": {
+    "title": "Jour {{round}}",
+    "discussion": "Discussion",
+    "addTime": "+30s",
+    "callVote": "Lancer le vote"
+  },
+  "vote": {
+    "title": "Vote",
+    "instructions": "Volontaire d'abord, puis sens horaire. Tape le plus voté.",
+    "skip": "Aucune élimination",
+    "tie": "Égalité",
+    "revote": "Revote des ex æquo",
+    "tieSkip": "Pas d'élimination",
+    "tieAmong": "Égalité entre {{names}}"
+  },
+  "deathSpeech": {
+    "title": "Dernier mot",
+    "instructions": "{{name}} a 30 secondes.",
+    "secondsLeft": "{{n}}s",
+    "end": "Temps écoulé"
+  },
+  "death": {
+    "wasA": "{{name}} était {{role}}",
+    "noElimination": "Personne n'a été éliminé"
+  },
+  "night": {
+    "title": "Nuit {{round}}",
+    "everyoneClose": "Tout le monde, fermez les yeux.",
+    "wakeUp": "Tout le monde, ouvrez les yeux.",
+    "passInstructions": "Passez le téléphone dans le sens horaire. Chaque joueur tape une fois.",
+    "tapToContinue": "Tape pour continuer",
+    "sleep": "Sommeil",
+    "yourInvestigation": "Ton enquête",
+    "tapTarget": "Choisis un joueur à enquêter",
+    "result": "Résultat",
+    "resultMafia": "Mafia",
+    "resultTown": "Innocent",
+    "passOn": "Passer au suivant",
+    "mafiaPick": "Mafia, choisissez la cible.",
+    "godfatherTap": "Parrain, tape ta cible."
+  },
+  "end": {
+    "title": "Fin de partie",
+    "townWins": "La Ville gagne !",
+    "mafiaWins": "La Mafia gagne !",
+    "reasonGodfather": "Le Parrain a été éliminé.",
+    "reasonAllMafia": "Toute la Mafia a été éliminée.",
+    "reasonParity": "La Mafia a atteint la parité.",
+    "mvps": "Joueurs du match",
+    "playAgain": "Rejouer",
+    "home": "Accueil"
+  },
+  "mvp": {
+    "best_sheriff": "Meilleur Shérif",
+    "best_mafia": "Meilleure Mafia",
+    "best_civilian": "Meilleur Civil",
+    "best_bluffer": "Meilleur Bluffeur"
+  },
+  "roster": {
+    "title": "Joueurs",
+    "empty": "Aucun joueur enregistré.",
+    "addNew": "Ajouter un joueur",
+    "name": "Nom",
+    "photo": "Photo",
+    "removePhoto": "Supprimer la photo",
+    "stats": "Statistiques",
+    "gamesPlayed": "Parties jouées",
+    "winRate": "Taux de victoire",
+    "rolesPlayed": "Rôles joués",
+    "deleteConfirm": "Retirer {{name}} de la liste ?"
+  },
+  "history": {
+    "title": "Historique",
+    "empty": "Aucune partie pour l'instant.",
+    "winner": "Vainqueur : {{winner}}"
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "languageEn": "English",
+    "languageAr": "العربية",
+    "languageFr": "Français",
+    "sound": "Effets sonores",
+    "music": "Musique",
+    "about": "À propos",
+    "version": "Version {{v}}",
+    "offline": "Mafiazo fonctionne hors ligne. Pas de comptes. Pas de suivi.",
+    "languageChangeNote": "Le changement de langue est immédiat."
+  },
+  "narration": {
+    "common": {
+      "role_reveal_intro": "Passez le téléphone. Chaque joueur maintient pour voir son rôle.",
+      "night_0_intro": "Bienvenue. Tout le monde, fermez les yeux.",
+      "night_0_mafia_open": "Mafia, ouvrez les yeux. Reconnaissez-vous. Le Parrain est parmi vous.",
+      "night_0_mafia_close": "Mafia, fermez les yeux.",
+      "night_0_sheriff_open": "Détective, ouvre les yeux.",
+      "night_0_sheriff_close": "Détective, ferme les yeux.",
+      "night_0_outro": "Tout le monde, ouvrez les yeux. Le jour 1 commence.",
+      "day_intro": "Jour {{round}}. Discutez.",
+      "day_timer_warning": "Trente secondes restantes.",
+      "vote_intro": "Vote. Volontaire d'abord, puis sens horaire.",
+      "death_speech_intro": "{{name}}, tu as trente secondes.",
+      "death_speech_end": "Temps écoulé.",
+      "role_reveal_on_death": "{{name}} était {{role}}.",
+      "night_intro": "Tout le monde, fermez les yeux. La nuit tombe.",
+      "night_mafia_open": "Mafia, ouvrez les yeux.",
+      "night_mafia_kill_prompt": "Mafia, choisissez la cible.",
+      "night_mafia_close": "Mafia, fermez les yeux.",
+      "night_sheriff_open": "Shérif, ouvre les yeux.",
+      "night_sheriff_pass_phone": "Passez le téléphone dès le joueur 1. Chacun tape une fois.",
+      "night_sheriff_close": "Shérif, ferme les yeux.",
+      "night_outro": "Tout le monde, ouvrez les yeux.",
+      "game_over_town": "La Ville gagne.",
+      "game_over_mafia": "La Mafia gagne."
+    }
+  },
+  "resume": {
+    "title": "Reprendre la partie ?",
+    "body": "Une partie est en cours. La reprendre ?",
+    "discardConfirm": "Abandonner la partie sauvegardée ?"
+  }
+}

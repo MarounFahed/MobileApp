@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Mafiazo",
+    "slug": "mafiazo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "mafiazo",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E1A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mafiazo.app",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Mafiazo lets you attach photos to your saved roster of players. Photos stay on your device and are never uploaded.",
+        "NSCameraUsageDescription": "Take a photo for a player profile. Photos stay on your device and are never uploaded."
+      }
+    },
+    "android": {
+      "package": "com.mafiazo.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E1A"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Mafiazo lets you attach photos to your saved roster of players. Photos stay on your device and are never uploaded."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}

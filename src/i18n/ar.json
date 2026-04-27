@@ -1,0 +1,211 @@
+{
+  "app": {
+    "name": "مافيازو",
+    "tagline": "مرّر الهاتف. لا تثق بأحد."
+  },
+  "menu": {
+    "newGame": "لعبة جديدة",
+    "resumeGame": "استئناف اللعبة؟",
+    "resume": "استئناف",
+    "discard": "تجاهل",
+    "roster": "اللاعبون",
+    "history": "السجل",
+    "settings": "الإعدادات",
+    "modeStandard": "مافيا كلاسيك",
+    "modeLebnene": "لبناني",
+    "modeStandardDesc": "القواعد العالمية الكلاسيكية مع قتل ليلي.",
+    "modeLebneneDesc": "النسخة اللبنانية. لا قتل ليلي — المافيا تعمل في النهار."
+  },
+  "common": {
+    "next": "التالي",
+    "back": "رجوع",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد",
+    "skip": "تخطي",
+    "done": "تم",
+    "start": "ابدأ",
+    "pause": "إيقاف",
+    "resume": "متابعة",
+    "yes": "نعم",
+    "no": "لا",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "save": "حفظ",
+    "add": "إضافة"
+  },
+  "setup": {
+    "title": "إعداد اللعبة",
+    "playMode": "نمط اللعب",
+    "playModeModerator": "مع منسّق",
+    "playModeNoModerator": "بدون منسّق",
+    "players": "اللاعبون",
+    "addPlayer": "أضف لاعبًا",
+    "addAdHoc": "اسم جديد…",
+    "minPlayers": "يلزم خمسة لاعبين على الأقل",
+    "balance": "توزيع الأدوار",
+    "balanceAuto": "توزيع تلقائي",
+    "balanceManual": "يدوي",
+    "options": "خيارات",
+    "discussionTimer": "مؤقت النقاش",
+    "nightPace": "إيقاع الليل",
+    "paceSlow": "بطيء",
+    "paceMedium": "متوسط",
+    "paceFast": "سريع",
+    "tieBreak": "في حال التعادل",
+    "tieRevote": "إعادة تصويت المتعادلين",
+    "tieSkip": "تخطي الإقصاء",
+    "investigations": "تحقيقات في الليلة",
+    "investigationsLocked": "ثابت ١ تحت ١٥ لاعبًا",
+    "godfatherInnocent": "الأب الكبير يبدو بريئًا للمحقق",
+    "soundEffects": "المؤثرات الصوتية",
+    "music": "الموسيقى",
+    "testAudio": "تجربة الصوت",
+    "begin": "ابدأ اللعبة"
+  },
+  "reveal": {
+    "title": "كشف الأدوار",
+    "passTo": "مرّر إلى {{name}}",
+    "holdToReveal": "اضغط مطوّلًا لكشف دورك",
+    "release": "ارفع لإخفاء",
+    "youAre": "أنت…",
+    "investigationsBegin": "تحقيقاتك تبدأ من الليلة الأولى.",
+    "everyoneSeen": "الجميع رأى دوره"
+  },
+  "roles": {
+    "godfather": "الأب الكبير",
+    "mafia": "مافيا",
+    "sheriff": "الشريف",
+    "police": "شرطة",
+    "detective": "محقق",
+    "civilian": "مدني"
+  },
+  "roleDesc": {
+    "godfather": "تقود المافيا. تبدو بريئًا أمام المحققين.",
+    "mafia": "اعمل مع رفاقك في المافيا. أنت تعرفهم.",
+    "sheriff": "كل ليلة، افحص فريق لاعب واحد سرًا.",
+    "police": "اكتشف المافيا بالاستماع، التصويت، والتحليل.",
+    "detective": "كل ليلة، افحص فريق لاعب واحد سرًا.",
+    "civilian": "اكتشف المافيا بالاستماع، التصويت، والتحليل."
+  },
+  "day": {
+    "title": "اليوم {{round}}",
+    "discussion": "نقاش",
+    "addTime": "+٣٠ث",
+    "callVote": "ابدأ التصويت"
+  },
+  "vote": {
+    "title": "تصويت",
+    "instructions": "متطوع أولًا، ثم باتجاه عقارب الساعة. اضغط على الأكثر أصواتًا.",
+    "skip": "بدون إقصاء",
+    "tie": "تعادل",
+    "revote": "إعادة تصويت المتعادلين",
+    "tieSkip": "تخطي — لا إقصاء",
+    "tieAmong": "تعادل بين {{names}}"
+  },
+  "deathSpeech": {
+    "title": "كلمة أخيرة",
+    "instructions": "{{name}} لديه ٣٠ ثانية.",
+    "secondsLeft": "{{n}}ث",
+    "end": "انتهى الوقت"
+  },
+  "death": {
+    "wasA": "{{name}} كان {{role}}",
+    "noElimination": "لم يُقصَ أحد"
+  },
+  "night": {
+    "title": "الليلة {{round}}",
+    "everyoneClose": "الجميع، أغمضوا أعينكم.",
+    "wakeUp": "الجميع، افتحوا أعينكم.",
+    "passInstructions": "مرّروا الهاتف باتجاه عقارب الساعة. كل لاعب يضغط مرة.",
+    "tapToContinue": "اضغط للمتابعة",
+    "sleep": "نوم",
+    "yourInvestigation": "تحقيقك",
+    "tapTarget": "اختر لاعبًا للتحقيق",
+    "result": "النتيجة",
+    "resultMafia": "مافيا",
+    "resultTown": "بريء",
+    "passOn": "مرّر للتالي",
+    "mafiaPick": "مافيا، اختاروا هدف الليلة.",
+    "godfatherTap": "أب كبير، اضغط على هدفك."
+  },
+  "end": {
+    "title": "انتهت اللعبة",
+    "townWins": "فوز الشعب!",
+    "mafiaWins": "فوز المافيا!",
+    "reasonGodfather": "أُقصي الأب الكبير.",
+    "reasonAllMafia": "أُقصيت كل المافيا.",
+    "reasonParity": "تساوت المافيا مع الشعب.",
+    "mvps": "أبطال المباراة",
+    "playAgain": "العب مجددًا",
+    "home": "الرئيسية"
+  },
+  "mvp": {
+    "best_sheriff": "أفضل شريف",
+    "best_mafia": "أفضل مافيا",
+    "best_civilian": "أفضل مدني",
+    "best_bluffer": "أفضل مخادع"
+  },
+  "roster": {
+    "title": "اللاعبون",
+    "empty": "لا لاعبين محفوظين بعد.",
+    "addNew": "أضف لاعبًا جديدًا",
+    "name": "الاسم",
+    "photo": "صورة",
+    "removePhoto": "إزالة الصورة",
+    "stats": "إحصاءات",
+    "gamesPlayed": "ألعاب لُعبت",
+    "winRate": "نسبة الفوز",
+    "rolesPlayed": "أدوار لُعبت",
+    "deleteConfirm": "حذف {{name}} من القائمة؟"
+  },
+  "history": {
+    "title": "السجل",
+    "empty": "لا ألعاب بعد.",
+    "winner": "الفائز: {{winner}}"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "languageEn": "English",
+    "languageAr": "العربية",
+    "languageFr": "Français",
+    "sound": "المؤثرات الصوتية",
+    "music": "الموسيقى",
+    "about": "حول",
+    "version": "الإصدار {{v}}",
+    "offline": "مافيازو تعمل بدون إنترنت. لا حسابات. لا تتبع.",
+    "languageChangeNote": "تغيير اللغة يطبق فورًا."
+  },
+  "narration": {
+    "common": {
+      "role_reveal_intro": "مرّروا الهاتف. كل لاعب يضغط مطوّلًا ليرى دوره.",
+      "night_0_intro": "أهلًا بكم. الجميع، أغمضوا أعينكم.",
+      "night_0_mafia_open": "مافيا، افتحوا أعينكم. تعرّفوا على بعضكم. الأب الكبير منكم.",
+      "night_0_mafia_close": "مافيا، أغمضوا أعينكم.",
+      "night_0_sheriff_open": "محقق، افتح عينيك.",
+      "night_0_sheriff_close": "محقق، أغمض عينيك.",
+      "night_0_outro": "الجميع، افتحوا أعينكم. اليوم الأول يبدأ.",
+      "day_intro": "اليوم {{round}}. ناقشوا.",
+      "day_timer_warning": "ثلاثون ثانية متبقية.",
+      "vote_intro": "حان وقت التصويت. متطوع أولًا، ثم باتجاه عقارب الساعة.",
+      "death_speech_intro": "{{name}}، لديك ثلاثون ثانية.",
+      "death_speech_end": "انتهى الوقت.",
+      "role_reveal_on_death": "{{name}} كان {{role}}.",
+      "night_intro": "الجميع، أغمضوا أعينكم. حلّ الليل.",
+      "night_mafia_open": "مافيا، افتحوا أعينكم.",
+      "night_mafia_kill_prompt": "مافيا، اختاروا هدف الليلة.",
+      "night_mafia_close": "مافيا، أغمضوا أعينكم.",
+      "night_sheriff_open": "شريف، افتح عينيك.",
+      "night_sheriff_pass_phone": "مرّروا الهاتف من اللاعب الأول. كل لاعب يضغط مرة.",
+      "night_sheriff_close": "شريف، أغمض عينيك.",
+      "night_outro": "الجميع، افتحوا أعينكم.",
+      "game_over_town": "فاز الشعب.",
+      "game_over_mafia": "فازت المافيا."
+    }
+  },
+  "resume": {
+    "title": "استئناف اللعبة؟",
+    "body": "حفظنا لعبتك. هل تريد المتابعة من حيث توقفت؟",
+    "discardConfirm": "حذف اللعبة المحفوظة؟"
+  }
+}
