@@ -322,12 +322,22 @@ describe('standard mode', () => {
       settings: baseSettings(),
       players: makePlayers(7),
       counts: autoBalance(7),
+      manualRoles: [
+        'godfather',
+        'mafia',
+        'sheriff',
+        'police',
+        'police',
+        'police',
+        'police',
+      ],
     });
     g = startRoleReveal(g);
     g = finishRoleReveal(g);
     g = finishNight0(g);
     g = startVote(g);
-    g = recordVoteElimination(g, g.players[6]!.id);
+    // Eliminate a police player so the game continues into Night.
+    g = recordVoteElimination(g, 'p7');
     g = finishDeathSpeech(g);
     g = finishRoleRevealOnDeath(g);
     g = checkWinAndAdvance(g);

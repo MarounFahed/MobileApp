@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { db } from '@/db/schema';
-import { setLanguage, SupportedLanguage } from '@/i18n';
+import { setLanguage as applyLanguage, SupportedLanguage } from '@/i18n';
 
 interface AppState {
   language: SupportedLanguage;
@@ -45,11 +45,12 @@ export const useAppStore = create<AppState>((set, get) => ({
       musicEnabled: music,
       lastGameSettings: last,
     });
-    setLanguage(lang);
+    // Note: do NOT call setLanguage here. i18n may not be initialized yet,
+    // and forceRTL on Android can trigger an app restart loop.
   },
   setLanguage: (l) => {
     writeMeta('language', l);
-    setLanguage(l);
+    applyLanguage(l);
     set({ language: l });
   },
   setSoundEnabled: (v) => {
