@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
-import { v4 as uuidv4 } from 'uuid';
+import { newId } from '@/utils/id';
 import { Screen } from '@/components/Screen';
 import { Button } from '@/components/Button';
 import { PlayerCard } from '@/components/PlayerCard';
@@ -92,7 +92,7 @@ export default function SetupScreen() {
     const trimmed = adHoc.trim();
     if (!trimmed) return;
     const entry: RosterEntry = {
-      id: uuidv4(),
+      id: newId(),
       name: trimmed,
       color: pickColor(),
       createdAt: Date.now(),
@@ -120,7 +120,7 @@ export default function SetupScreen() {
     };
     useAppStore.getState().setLastGameSettings(JSON.stringify(settings));
     const snapshot = createGame({
-      id: uuidv4(),
+      id: newId(),
       settings,
       players: selected.map((p) => ({
         id: p.id,

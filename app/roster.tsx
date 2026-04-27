@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import * as FileSystem from 'expo-file-system';
-import { v4 as uuidv4 } from 'uuid';
+import { newId } from '@/utils/id';
 import { useTranslation } from 'react-i18next';
 import { Screen } from '@/components/Screen';
 import { Button } from '@/components/Button';
@@ -53,7 +53,7 @@ export default function RosterScreen() {
     const trimmed = name.trim();
     if (!trimmed) return;
     const entry: RosterEntry = {
-      id: editing?.id ?? uuidv4(),
+      id: editing?.id ?? newId(),
       name: trimmed,
       photoUri,
       color: editing?.color ?? pickColor(),
@@ -95,7 +95,7 @@ export default function RosterScreen() {
     });
     if (res.canceled || !res.assets[0]) return;
     const src = res.assets[0].uri;
-    const dest = `${FileSystem.documentDirectory}roster/${uuidv4()}.jpg`;
+    const dest = `${FileSystem.documentDirectory}roster/${newId()}.jpg`;
     await FileSystem.makeDirectoryAsync(
       `${FileSystem.documentDirectory}roster/`,
       { intermediates: true },
