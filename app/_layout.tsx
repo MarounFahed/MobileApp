@@ -8,6 +8,7 @@ import { init as initDb } from '@/db/schema';
 import { initI18n } from '@/i18n';
 import { useAppStore } from '@/stores/appStore';
 import { colors, spacing, typography } from '@/theme';
+import { ErrorBoundary } from '@/components/ErrorBoundary';
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
 
@@ -78,6 +79,7 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
+        <ErrorBoundary>
         <Stack
           screenOptions={{
             headerStyle: { backgroundColor: colors.bg },
@@ -116,6 +118,7 @@ export default function RootLayout() {
             options={{ headerShown: false, gestureEnabled: false }}
           />
         </Stack>
+        </ErrorBoundary>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

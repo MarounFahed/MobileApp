@@ -33,7 +33,13 @@ export default function RosterScreen() {
   const [name, setName] = useState('');
   const [photoUri, setPhotoUri] = useState<string | undefined>();
 
-  const refresh = () => setEntries(listRoster());
+  const refresh = () => {
+    try {
+      setEntries(listRoster());
+    } catch (e) {
+      Alert.alert('Failed to load roster', String((e as Error)?.message ?? e));
+    }
+  };
 
   useEffect(refresh, []);
 
@@ -52,17 +58,21 @@ export default function RosterScreen() {
   const save = async () => {
     const trimmed = name.trim();
     if (!trimmed) return;
-    const entry: RosterEntry = {
-      id: editing?.id ?? newId(),
-      name: trimmed,
-      photoUri,
-      color: editing?.color ?? pickColor(),
-      createdAt: editing?.createdAt ?? Date.now(),
-    };
-    if (editing) updateRoster(entry);
-    else addRoster(entry);
-    refresh();
-    startNew();
+    try {
+      const entry: RosterEntry = {
+        id: editing?.id ?? newId(),
+        name: trimmed,
+        photoUri,
+        color: editing?.color ?? pickColor(),
+        createdAt: editing?.createdAt ?? Date.now(),
+      };
+      if (editing) updateRoster(entry);
+      else addRoster(entry);
+      refresh();
+      startNew();
+    } catch (e) {
+      Alert.alert('Failed to save', String((e as Error)?.message ?? e));
+    }
   };
 
   const remove = (e: RosterEntry) => {
@@ -176,7 +186,12 @@ function RosterRow({
   onRemove: () => void;
 }) {
   const { t } = useTranslation();
-  const stats = getStats(entry.id);
+  let stats: ReturnType<typeof getStats> = null;
+  try {
+    stats = getStats(entry.id);
+  } catch {
+    stats = null;
+  }
   return (
     <View style={styles.row}>
       <Pressable onPress={onEdit} style={styles.rowMain}>
